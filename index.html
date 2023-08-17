@@ -11,9 +11,12 @@
 <div class="container">
 <img src="https://pagelink.site/img/shield.svg" alt width="120" class="margin-auto">
 <h1>Tudo certo</h1>
-<p>Clique no botão abaixo para ser redirecionado para a página solicitada!</p>
+<p>Clique em um dos botões abaixo para ser redirecionado para a página solicitada!</p>
 <div class="btn">
 <a href="#" id="redirect">Continuar</a>
+</div>
+<div class="btn">
+<a href="#" id="redirect2">Ir para o link novamente</a>
 </div>
 </div>
 <script>
@@ -22,6 +25,25 @@
     document.getElementById('redirect').addEventListener('click', function (e) {
         window.location.replace(braipid);
     });
+    document.getElementById('redirect2').addEventListener('click', function (e) {
+        window.location.replace(braipid);
+    });
 </script>
 </body>
+<footer>
+    <div class="footer-container">
+        <div class="policy">
+            <a href="#">Política de Privacidade</a>
+        </div>
+        <div class="policy">
+            <a href="#">Termos e Condições</a>
+        </div>
+        <div class="policy">
+            <a href="#">Política de Trocas e Devoluções</a>
+        </div>
+        <div class="policy">
+            <a href="#">Política de Pagamento</a>
+        </div>
+    </div>
+</footer>
 </html>
