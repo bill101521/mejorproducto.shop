@@ -2,16 +2,9 @@
 <html lang="es">
 <head>
     <script>
-    !function (w, d, t) {
-      w.AnalyticsObject=t;var a=w[t]=w[t]||[];a.methods=['page','track','identify','instances','debug','on','off','once','ready','alias','group','enableCookie','disableCookie'],a.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<a.methods.length;i++)a.setAndDefer(a,a.methods[i]);a.instance=function(t){for(var e=a._i[t]||[],n=0;n<a.methods.length;n++)a.setAndDefer(e,a.methods[n]);return e},a.load=function(e,n){var i='https://tracking.example.com/events.js';a._i=a._i||{},a._i[e]=[],a._i[e]._u=i,a._t=a._t||{},a._t[e]=+new Date,a._o=a._o||{},a._o[e]=n||{};var o=document.createElement('script');o.type='text/javascript',o.async=!0,o.src=i+'?sdkid='+e+'&lib='+t;var r=document.getElementsByTagName('script')[0];r.parentNode.insertBefore(o,r)};
-      a.load('CJD3BABC77UDNVGREC90');
-      a.load('');
-      a.load('');
-      a.page();
-    }(window, document, 'analytics');
-    </script><script>
-      analytics.track('ViewContent');
-    </script>
+!function(e){var t={};function n(o){if(t[o])return t[o].exports;var i=t[o]={i:o,l:!1,exports:{}};return e[o].call(i.exports,i,i.exports,n),i.l=!0,i.exports}n.m=e,n.c=t,n.d=function(e,t,o){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var i in e)n.d(o,i,function(t){return e[t]}.bind(null,i));return o},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=3)}([function(e,t,n){"use strict";function o(e,t){return Object.prototype.hasOwnProperty.call(e,t)}e.exports=function(e,t,n,r){t=t||"&",n=n||"=";var i={};if("string"!=typeof e||0===e.length)return i;var a=/\+/g;e=e.split(t);var u=1e3;r&&"number"==typeof r.maxKeys&&(u=r.maxKeys);var c=e.length;if(u>0&&c>u&&e.splice(u,c-u),2!==e.length)return e;var s=e[0],d=e[1];if(d="undefined"==typeof d?"":d,s=decodeURIComponent(s),d=decodeURIComponent(d),r&&!o(i,s)){var f;d.indexOf("?")>-1?(f=d.split("?"),d=f[0],f=f[1]):f="",Object.defineProperty(i,s,{value:f,enumerable:!0,configurable:!0,writable:!0})}d&&(i[s]=d)}},{3:function(e,t,n){e.exports=n(4)},4:function(e,t,n){"use strict";n.r(t);var o="CJD3BABC77UDNVGREC90";!function(){var e=window.location.protocol+"//analytics.tiktok.com/i18n/pixel/page-view?pixel_id="+o;e+="&event_type=VIEWCONTENT";for(var t=document.getElementsByTagName("meta"),n=0;n<t.length;n++){var i=t[n],a=i.getAttribute("property");if("og:url"===a||"og:title"===a||"og:description"===a||"og:image"===a){var u=i.getAttribute("content");e+="&"+a+"="+encodeURIComponent(u)}}var c=document.createElement("img");c.src=e,c.width=1,c.height=1,c.style.display="none",document.body.appendChild(c)}()}},0,[1]))}));
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Todo en orden</title>
