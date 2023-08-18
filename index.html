@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <script>
-!function(e){var t={};function n(o){if(t[o])return t[o].exports;var i=t[o]={i:o,l:!1,exports:{}};return e[o].call(i.exports,i,i.exports,n),i.l=!0,i.exports}n.m=e,n.c=t,n.d=function(e,t,o){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var i in e)n.d(o,i,function(t){return e[t]}.bind(null,i));return o},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=3)}([function(e,t,n){"use strict";function o(e,t){return Object.prototype.hasOwnProperty.call(e,t)}e.exports=function(e,t,n,r){t=t||"&",n=n||"=";var i={};if("string"!=typeof e||0===e.length)return i;var a=/\+/g;e=e.split(t);var u=1e3;r&&"number"==typeof r.maxKeys&&(u=r.maxKeys);var c=e.length;if(u>0&&c>u&&e.splice(u,c-u),2!==e.length)return e;var s=e[0],d=e[1];if(d="undefined"==typeof d?"":d,s=decodeURIComponent(s),d=decodeURIComponent(d),r&&!o(i,s)){var f;d.indexOf("?")>-1?(f=d.split("?"),d=f[0],f=f[1]):f="",Object.defineProperty(i,s,{value:f,enumerable:!0,configurable:!0,writable:!0})}d&&(i[s]=d)}},{3:function(e,t,n){e.exports=n(4)},4:function(e,t,n){"use strict";n.r(t);var o="CJD3BABC77UDNVGREC90";!function(){var e=window.location.protocol+"//analytics.tiktok.com/i18n/pixel/page-view?pixel_id="+o;e+="&event_type=VIEWCONTENT";for(var t=document.getElementsByTagName("meta"),n=0;n<t.length;n++){var i=t[n],a=i.getAttribute("property");if("og:url"===a||"og:title"===a||"og:description"===a||"og:image"===a){var u=i.getAttribute("content");e+="&"+a+"="+encodeURIComponent(u)}}var c=document.createElement("img");c.src=e,c.width=1,c.height=1,c.style.display="none",document.body.appendChild(c)}()}},0,[1]))}));
-</script>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Todo en orden</title>
@@ -18,20 +14,38 @@
 <p>Haga clic en el botón de abajo para ser redirigido a la página solicitada.</p>
 
 <div class="btn">
-<a href="https://mejorproducto.shop/2" id="redirect2">Continuar</a>
+<a href="#" id="redirect2">Continuar</a>
 </div>
 </div>
 <script>
     var path = location.pathname + location.search;
     var braipid = 'https://mejorproducto.shop/2' + path;
-    document.getElementById('redirect').addEventListener('click', function (e) {
-        window.location.replace(braipid);
-    });
+    
+    // Função para disparar o evento "viewContent"
+    function sendTikTokViewContentEvent() {
+        var pixelUrl = "https://analytics.tiktok.com/i18n/pixel/page-view?pixel_id=CJD3BABC77UDNVGREC90";
+        pixelUrl += "&event_type=VIEWCONTENT";
+        
+        var img = new Image(1, 1);
+        img.src = pixelUrl;
+        img.style.display = "none";
+        document.body.appendChild(img);
+    }
+
     document.getElementById('redirect2').addEventListener('click', function (e) {
+        // Disparar o evento de "viewContent" do TikTok Pixel
+        sendTikTokViewContentEvent();
+        
+        // Redirecionar após disparar o evento
         window.location.replace(braipid);
     });
 </script>
 </body>
+<footer>
+    <div class="footer-container">
+        <!-- Políticas de privacidade e termos -->
+    </div>
+
 <footer>
     <div class="footer-container">
         <div class="policy">
